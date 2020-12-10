@@ -1,0 +1,333 @@
+img{ max-width:100%;}
+
+.gallery_box li{ 
+    width:33.333333%; 
+    max-width: 100% ; 
+    display:inline-block; 
+    float: left; 
+    text-align: center; 
+    overflow: hidden;    
+    position: relative;}
+.gallery_box{ 
+    padding:0;
+    display: flow-root;}
+
+.hoverOnImg{
+    transform: scale(1.1);
+}
+.gallery_box li img{
+    width: 100%;
+    -webkit-transition: transform 0.5s ease;
+    -o-transition: transform 0.5s ease;
+    transition: transform 0.5s ease;}
+.gallery_box li:nth-child(even) {
+    height: 304px;
+}
+.gallery_box li:nth-child(odd) {
+    height: 438px; 
+}
+.gallery_box li:nth-child(odd) .box_data{ 
+    background:rgba(26, 25, 25, 0.17) 
+}
+.gallery_box li:nth-child(even) .box_data{
+     background:rgba(0,44,255,0.27) 
+}
+.gallery_box .box_data{
+     position:absolute; top: 0; left: 0; right:0; bottom:0; color:#fff;
+}
+.gallery_box .box_data span{
+     position:absolute; top: 50%; transform: translateY(-50%); left:0 ; right:0; font-size:24px;
+}
+.gallery_box li:hover .box_data{
+     background:rgba(255, 0, 38, 0.253)
+}
+
+#springSection{
+    margin-top: -144px;
+    background-color:#1d1d1d;
+    width: 101%;
+    position: relative;
+    padding: 50px 90px 100px;
+    text-align: center;
+    color: #fff;
+}
+#springSection img{
+    border: 3px solid white;
+    border-radius: 7px;
+    width: 200px;
+    height: 200px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+}
+#springSection h2{
+    margin-bottom: 100px;
+}
+.transition {
+    -webkit-transform: scale(1.7); 
+    -moz-transform: scale(1.7);
+    -o-transform: scale(1.7);
+    transform: scale(1.7);
+}
+
+
+#summerSection{
+    padding: 50px;
+    padding-bottom: 100px;
+    text-align: center;
+    background-color: antiquewhite;
+}
+.left-rigth{
+    display: inline-block;
+}
+#galery img{
+    border: 3px solid white;
+    border-radius: 5px;
+}
+#summerSection h2{
+    margin-bottom: 80px;
+}
+#galery{
+    display: none;
+}
+#largeImage:hover{
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    20% {transform: translate(-1px, -2px) rotate(-1deg); }
+    40% { transform: translate(3px, 2px) rotate(0deg); }
+    60% { transform: translate(-1px, 2px) rotate(-1deg); }
+    80% { transform: translate(3px, 1px) rotate(-1deg); }
+    100% { transform: translate(1px, 2px) rotate(0deg); }
+}
+#helloweenSection{
+    margin: 0;
+    /* background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%); */
+    overflow-y: hidden;
+    background: url("./autumn/he4.jpg");
+}
+.night{
+    height: 70vh;
+    width: 60vw;
+    border: 1px solid black;
+    margin: 5rem auto;
+    background: url("./moving/Img_1.png");
+    background-size: cover;
+    position: relative;
+    box-shadow: 1px 2px 60px rgba(0, 0, 0, 4);
+    overflow-x: hidden;
+}
+.surface{
+    height: 133px;
+    width: 500%;
+    background: url("./moving/Img_02.png");
+    display: block;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    background-repeat: repeat-x;
+}
+.car{
+    position: absolute;
+    bottom: 8%;
+    left: 20%;
+}
+@keyframes moveRight{
+    100%{transform: translateX(-2950px);}
+}
+@keyframes suspension{
+    100%{
+        transform: translateY(-1px);
+    }
+    50%{
+        transform: translateY(2px);
+    }
+    0%{
+        transform: translateY(-1px);
+    }
+}
+.moveRight{
+    animation: moveRight 6s linear infinite;
+}
+.suspension{
+    animation: suspension 1s linear infinite;
+}
+
+
+#autumnSection{
+    background-color: rgb(23, 8, 3);
+    position: relative;
+    margin: -20px auto;
+    padding: 50px 0;
+}
+#autumnSection h2{
+    text-align: center;
+    color: #fff;
+}
+
+.mySlides {display: none}
+
+.autumn {
+    padding-top: 50px;
+    vertical-align: center;
+    width: 900px;
+    height: 575px; 
+    display: block;
+    margin: 0 auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.prev{
+    margin-left: 100px;
+}
+.next{
+    margin-right: 100px;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 20px 2px;
+  background-color:rgb(255, 224, 204);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: rgb(164, 112, 112);
+}
+.fade {
+  animation: fade 3s ease-out;
+}
+@keyframes fade {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+#helloweenSection{
+    padding: 40px 0;
+    text-align: center;
+    color: azure;
+}
+
+#newyearSection{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid black;
+    height: 720px;
+}
+.container{
+    position: absolute;
+    top: 80px;
+    left: 100px;
+    right: 100px;
+    bottom: 80px;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5),
+                0 0 0 100px rgba(0, 0, 0, 0.1);
+}
+.container h2{
+    text-align: center;
+    font-size: 10em;
+    line-height: 0.7em;
+    color: #fff;
+    margin-top: -80px;
+}
+.container h2 span{
+    display: block;
+    font-weight: 300;
+    letter-spacing: 6px;
+    font-size: 0.2em;
+}
+.countdown{
+    display: flex;
+    margin-top: 50px;
+}
+.countdown div{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background:  rgb(205, 58, 235);
+    color: #fff;
+    margin: 0 15px;
+    font-size: 3em;
+    font-weight: 500;
+}
+.countdown div::before{
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    background: rgba(42, 14, 119, 0.384);
+    color: #fff;
+    font-size: 0.35em;
+    line-height: 35px;
+    font-weight: 300;
+}
+.countdown #day::before{
+    content: "Days";
+}
+.countdown #hour::before{
+    content: "Hours";
+}
+.countdown #minute::before{
+    content: "Minutes";
+}
+.countdown #second::before{
+    content: "Seconds";
+}
+
+/* ----------------------------------------- */
+
+#CanvasFirework {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+/* ------- */
+#canvas{
+    position:relative;
+    top:0;
+    left:0;
+    background-image: url("./winter/bw2.jpg");
+    background-size: cover;
+    
+}
